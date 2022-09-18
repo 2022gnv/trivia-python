@@ -25,14 +25,14 @@ jugador_turno = []
 print(BLUE+"Bienvenido a mi trivia sobre los *SIMPSON*")
 time.sleep(1)
 print("pondremos a prueva tus conocimientos simpsonianos"+RESET)
-time.sleep(2)
+time.sleep(1)
 print(GREEN+"comensaras con:",puntaje,"puntos"+RESET)
 time.sleep(1)
 #preguntaremos el nombre del jugador
 nombre=input("ingresa tu nombre:")
 edad=input("ingresa tu edad:")
 if edad.isnumeric():
-  print("esa edad me tomare en cervesas en la taberna de Moe")
+   print("esa edad me tomare en cervesas en la taberna de Moe")
 else:
   print("no es un numero")
   time.sleep(2)
@@ -110,7 +110,7 @@ while iniciar_trivia==True:
    print(nombre,"si pareces un simpson","!")
   elif respuesta_2=="c":
    b-=random.randint(1,6)
-   incorrecto+=1
+   incorrecta+=1
    print("incorrecto!", nombre,"son menos hijos")
   else:
     b-=random.randint(1,6)
@@ -121,7 +121,7 @@ while iniciar_trivia==True:
   time.sleep(2)
   #PREGUNTA 3
   print(GREEN+"\n3) ¿Donde trabajaba homero simpson?"+RESET)
-  listac=("a) en una fabrica","b) en un bar","c) en un taxi","d) en mcdonalds")
+  listac=("a) en una planta nuclear","b) en un bar","c) en un taxi","d) en mcdonalds")
   for element in listac:
     print(element)
     
@@ -135,7 +135,7 @@ while iniciar_trivia==True:
     print("muy bien", nombre,"!")
   elif respuesta_3=="b":
     c-=random.randint(1,5)
-    incorrecto+=1
+    incorrecta+=1
   elif respuesta_3=="c":
     c-=random.randint(1,5)
     incorrecta+=1
@@ -154,11 +154,11 @@ while iniciar_trivia==True:
   print("\njugaremos la ruleta de puntaje final")
   numero_carga2=int(input("\n¿cuantas veces deseas girar la ruleta? "))
   for ruleta in range(1,numero_carga2+1):
-    e=random.randint(1,20)
+    d=random.randint(1,20)
     if ruleta==numero_carga2:
-      print("a tu ultima puntuacion se le sumara: ",e)
+      print("a tu ultima puntuacion se le sumara: ",d)
     else:
-      print("intento N°",ruleta,"resultado: ",e)
+      print("intento N°",ruleta,"resultado: ",d)
 
     time.sleep(1)
   #agragamos un mensaje final donde se mostrara el puntaje total
@@ -170,7 +170,7 @@ while iniciar_trivia==True:
 
   print(BLUE+"gracias",nombre,"por jugar mi trivia, alcanzastes",sum(lista1),"puntos."+RESET)
 
-  jugador_turnos.append(sum(lista1))
+  jugador_turno.append(sum(lista1))
   
   #si deseamos seguir jugando aqui se decide
   print("\n¿deseamos intentar la trivia nuevamente?")
