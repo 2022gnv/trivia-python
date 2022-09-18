@@ -22,7 +22,7 @@ intentos = 0 # es la variable que guaradara el numero de veces que el jugador in
 jugador_turno = []
 
 #mensaje de bienvenida
-print(BLUE+"Bienvenido, a mi trivia sobre los *SIMPSON*")
+print(BLUE+"Bienvenido a mi trivia sobre los *SIMPSON*")
 time.sleep(1)
 print("pondremos a prueva tus conocimientos simpsonianos"+RESET)
 time.sleep(2)
